@@ -1,11 +1,14 @@
 buildscript {
 	ext {
+        modelModule = 'model'
+        useCaseModule = 'usecase'
 		cleanArchitectureVersion = '3.22.4'
 		springBootVersion = '3.4.4'
 		sonarVersion = '6.1.0.5360'
 		jacocoVersion = '0.8.13'
 		pitestVersion = '1.15.0'
         lombokVersion = '1.18.38'
+        logstashLogbackVersion = '8.1'
 	}
 }
 

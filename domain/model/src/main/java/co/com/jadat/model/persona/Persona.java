@@ -1,20 +1,16 @@
 package co.com.jadat.model.persona;
-import lombok.Builder;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-//import lombok.NoArgsConstructor;
-import lombok.Setter;
 
-@Getter
-@Setter
-//@NoArgsConstructor
-@AllArgsConstructor
+import lombok.Value;
+import lombok.Builder;
+
+
+@Value
 @Builder(toBuilder = true)
 public class Persona {
 
-    private Integer id;
-    private String documentNumber;
-    private String name;
-    private String lastName;
-    private String email;
+    Integer id;
+    String documentNumber;
+    String name;
+    String lastName;
+    String email;
 }
